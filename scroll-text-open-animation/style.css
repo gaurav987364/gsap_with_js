@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'fontmain';
+    src: url('FoundersGroteskCondensed-Bold.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main-parent{
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.top-div{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+.center-div{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(38, 37, 37);
+}.bottom-div{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+.main h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1{
+    font-size: 24vw;
+    font-family: fontmain;
+}
+.upper-heading{
+    bottom: 35.5%;
+}
+.lower-heading{
+    top: 0% !important;
+}
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.center-div h2{
+    color: white;
+    font-family: fontmain;
+    font-size: 10vw;
+    text-align: center;
+    transition: all .6s ease;
+}
+.img{
+    /* position: absolute; */
+    width: 300px;
+    height: 300px;
+    /* box-flex-group: green; */
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.img img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s ease;
+}
+.img img:hover{
+    scale: 1.1;
+}
+h2:hover{
+    color: rgba(136, 255, 132, 0.774);
+    /* scale: 1.1; */
+} 

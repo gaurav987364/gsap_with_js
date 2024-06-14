@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section></section>
+
+    <section class="content">
+
+        <svg viewBox="0 0 1728 852" fill="none" preserveAspectRatio="xMidYMin slice">
+            <defs>
+                <filter id="displacementFilter">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="1" result="noise" />
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
+                </filter>
+                <mask id="circleMask">
+                    <circle cx="600" cy="800" r="0" fill="white" class="displacement" />
+                </mask>
+            </defs>
+            <!-- <rect width="1728" height="851.376" fill="#92E84E" width="100%" height="100%" mask="url(#circleMask)"/> -->
+            
+            <image style="transform: translateX(-20%)" xlink:href="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" width="100%" height="100%" mask="url(#circleMask)" />
+       
+        </svg>
+            
+
+        <ul>
+            <li>
+                <a href="#">
+                    <span>Ford Trends</span>
+                    <p class="date">Jan 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Sabotage Sneakers Campaign</span>
+                    <p class="date">Mar 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Dribbble</span>
+                    <p class="date">May 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Radiant Outfitters</span>
+                    <p class="date">May 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>Pura Vida Bottles</span>
+                    <p class="date">July 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>0x1 Conference</span>
+                    <p class="date">August 2022</p>
+                    <div class="border"></div>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>

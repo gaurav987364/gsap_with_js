@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #dadada;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;    
+    background: #000000;
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);
+    background: linear-gradient(to top, #434343, #000000); 
+}
+.two{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    padding: 0 15vw 0 20vw;
+}
+.textarea{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    z-index: 9;
+}
+.textarea h1{
+    overflow: hidden;
+    font-family: sans-serif;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 0.921);
+}
+.textarea p{
+    color: #dadada;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    font-size: .8vw;
+}
+.textarea a{
+    width: 100%;
+    margin-top: .4vw;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(51, 49, 49);
+}
+.textarea a h3{
+    font-size: 1vw;
+    color: #dadada;
+}
+.textarea h2{
+    margin-top: .4vw;
+    font-size: .9vw;
+    color: rgba(255, 255, 255, 0.892);
+}
+.lineone{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 20%;
+    height: 100vh;
+    overflow: hidden;
+    transform: rotate(-2deg);
+}
+.innerline{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+    height: 200vh;
+}
+.card{
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: all .6s ease;
+}
+.card:hover{
+    scale: 1.1;
+}
+#lintwo{
+    margin-top: -100vh;
+}
+.c-noise{
+    height: 300%;
+    left: -50%;
+    opacity: .032;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+    z-index: 100;
+    pointer-events: none;
+    background-image: url(https://www.cinecasero.uy/img/noise-full.png);
+}
+.c-old {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://www.cinecasero.uy/img/old.webp);
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    z-index: 150;
+    pointer-events: none;
+}
+.lineone .card:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/1983037/pexels-photo-1983037.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.lineone .card:nth-child(2){
+    background-image: url(https://images.pexels.com/photos/7384923/pexels-photo-7384923.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.lineone .card:nth-child(3){
+    background-image: url(https://images.pexels.com/photos/5878883/pexels-photo-5878883.jpeg?auto=compress&cs=tinysrgb&w=600);
+}
+.lineone .card:nth-child(4){
+    background-image: url(https://images.unsplash.com/photo-1698310876812-1c7f92bfbe4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D);
+}
+.lineone .card:nth-child(5){
+    background-image: url(https://images.unsplash.com/photo-1600395450575-2d6988b92a02?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODB8fG1vdmllc3xlbnwwfHwwfHx8MA%3D%3D);
+}
+#linetwo .card:nth-child(1){
+    background-image: url(https://images.pexels.com/photos/17125142/pexels-photo-17125142/free-photo-of-cup-of-tea-with-chamomile-set-on-open-book.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+#linetwo .card:nth-child(2){
+    background-image: url(https://images.pexels.com/photos/19483163/pexels-photo-19483163/free-photo-of-woman-wearing-a-cap.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+#linetwo .card:nth-child(3){
+    background-image: url(https://images.pexels.com/photos/19384498/pexels-photo-19384498/free-photo-of-two-people-holding-telephones.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+#linetwo .card:nth-child(4){
+    background-image: url(https://images.pexels.com/photos/19562326/pexels-photo-19562326/free-photo-of-a-woman-in-a-sweater-and-skirt-posing-for-a-photo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+#linetwo .card:nth-child(5){
+    background-image: url(https://images.pexels.com/photos/19048044/pexels-photo-19048044/free-photo-of-wooden-house-on-pier-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+}
+
+
+/* bs scrolling k lie div h  */
+.main-1{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}

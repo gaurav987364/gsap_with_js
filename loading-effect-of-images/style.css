@@ -1,0 +1,61 @@
+/** @format */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  span {
+    display: block;
+    overflow: hidden;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  .images {
+    display: block;
+    overflow: hidden;
+    width: 550px;
+    height: 350px;
+  }
+  .images span {
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    display: block;
+    overflow: hidden;
+  }
+  .img,
+  .imgHome {
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .img1 {
+    background-image: url('https://images.pexels.com/photos/6679623/pexels-photo-6679623.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+  }
+  
+  .img2 {
+    background-image: url('https://images.pexels.com/photos/20393504/pexels-photo-20393504/free-photo-of-a-woman-taking-a-picture-of-a-cherry-blossom-tree.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+  }
+  .img3 {
+    background-image: url('https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg?auto=compress&cs=tinysrgb&w=600');
+  }
+  .img4 {
+    background-image: url('https://images.pexels.com/photos/17554347/pexels-photo-17554347/free-photo-of-taxis-in-front-of-palace-in-istanbul.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+  }
+  .img5 {
+    background-image: url('https://images.pexels.com/photos/20740353/pexels-photo-20740353/free-photo-of-a-table-with-bread-coffee-and-a-baguette-on-it.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+  }

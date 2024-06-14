@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'f1';
+    src: url('/AngerStyles.ttf');
+}
+.body{
+    background-color: #161616;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#home .main-text{
+    text-align: center;
+
+}
+.line{
+    overflow: hidden;
+
+}
+#home .main-text p{
+    overflow: hidden;
+    font-family:'f1';
+    font-size: 100px;
+    text-transform: uppercase;
+
+}
+a{
+    text-decoration: none;
+    color: #c9c9c9;
+
+}
+.cursor{
+    position: absolute;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(5px,5px);
+}
+.cursor-follow1{
+    background: url('https://images.pexels.com/photos/19445636/pexels-photo-19445636/free-photo-of-model-posing-in-bodysuit-and-heels.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow2{
+    background: url('https://images.pexels.com/photos/7218644/pexels-photo-7218644.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow3{
+    background: url('https://images.pexels.com/photos/19295811/pexels-photo-19295811/free-photo-of-brunette-in-turtleneck-sweater-and-pantyhose-posing-by-christmas-tree.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat 50% 50%;
+    opacity: 0;
+}
+
+.cursor-follow4{
+    background: url('https://images.pexels.com/photos/17763577/pexels-photo-17763577/free-photo-of-female-model-wearing-black-lingerie-posing-on-a-yellow-armchair.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat 50% 50%;
+    opacity: 0;
+}
+.line1:hover ~ .cursor-follow1{
+    opacity: 1;
+}
+.line2:hover ~ .cursor-follow2{
+    opacity: 1;
+}
+.line3:hover ~ .cursor-follow3{
+    opacity: 1;
+}
+.line4:hover ~ .cursor-follow4{
+    opacity: 1;
+}

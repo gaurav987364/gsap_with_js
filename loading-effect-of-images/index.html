@@ -1,0 +1,59 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="images">
+        <span class="imgHomeSpan">
+          <div class="imgHome img6">
+           <!-- main content here -->
+          </div>
+        </span>
+        <span> <div class="img img1"></div> </span
+        ><span> <div class="img img2"></div> </span
+        ><span> <div class="img img3"></div> </span
+        ><span> <div class="img img4"></div> </span
+        ><span>
+          <div class="img img5"></div>
+        </span>
+      </span>
+    </div>
+    <script>
+      const timeline = gsap.timeline();
+      timeline
+        .to(".img", {
+          delay: 1,
+          stagger: {
+            amount: 1.8,
+            from: "end",
+          },
+          ease: "sine.inOut",
+          y: 350,
+        })
+        .to(".imgHomeSpan", {
+          scale: 2,
+          ease: "sine.inOut",
+          duration: 1,
+        });
+      timeline.from(
+        ".menu, .year",
+        {
+          y: "-50",
+          stagger: {
+            amount: 0.5,
+          },
+        },
+        "-=1"
+      );
+    </script>
+  </body>
+</html>

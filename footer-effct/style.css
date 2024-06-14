@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html.body{
+    font-family: sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.work{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #141414;
+    padding: 6em 4em;
+    transition: backgroud-color .4s ease;
+    overflow: hidden;
+}
+.ovrlay{
+    position: absolute;
+    top: 0;
+    left: 15.25%;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    transition: 1s;
+    opacity: 0.7;
+}
+.prev{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: gray;
+    transform: rotate(10deg);
+    transition: transform .5s ease;
+}
+.prev.active{
+    transform: rotate(12.5deg);
+}
+#prev-1{
+    top: -500px;
+}
+#prev-2{
+    top: 0;
+}
+#prev-3{
+    top: 500px;
+}
+p{
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 1em;
+    color: #fff;
+    transition: .5s ;
+    z-index: 2;
+}
+h1{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 500;
+    transition: .5s;
+}
+.work-item{
+    position: relative;
+    width: 100%;
+    padding: 2em 0;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    border-bottom: 1px solid rgba(203, 193, 193, 0.592);
+    transition: .5s;
+    cursor: pointer;
+    z-index: 2;
+}
+.work-item#w-3{
+    border-bottom: none;
+}
+.work-item-icon{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: pink;
+    color: white;
+    overflow: hidden;
+    left: -20px;
+    opacity: 0;
+    transition: .3s;
+}
+.icon-holder{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+#i-1{
+    left: -70px;
+}
+.i-2{
+    left: 0;
+}
+button{
+    position: relative;
+    background: #fff;
+    color: #141414;
+    border: none;
+    transition: .5s;
+    padding: 2em 4em;
+    margin: 2em 0;
+    font-size: 15px;
+    border-radius: 100px;
+    font-weight: 500;
+    z-index: 2;
+}
+.work.hovered button{
+    background: #141414;
+    color: #fff;
+}
+.work.hovered h1{
+    opacity: 1;
+    background: none;
+    color: #141414;
+}
+.work.hovered p{
+    color: #141414;
+}
+.work.hovered .work-item{
+    border-bottom: 1px solid #141414;
+}
+.work.hovered .work-item#w-3{
+    border-bottom: none;
+}
+.bg-color-red{
+    background-color:#E1F0DA ;
+}
+.bg-color-blue{
+    background-color:#FF9843 ;
+}
+.bg-color-green{
+    background-color:rgba(60, 239, 99, 0.767) ;
+}

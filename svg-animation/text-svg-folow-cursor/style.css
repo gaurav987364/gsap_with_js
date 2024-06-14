@@ -1,0 +1,46 @@
+body {
+    background: rgb(0, 79, 248);
+    font-family: 'Poppins';
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+svg {
+    width: 100px;
+    position: absolute;
+    animation: rotation 4.5s infinite linear;
+    pointer-events: none;
+    transition: top 1s, left 1s;
+    transition-timing-function: ease-out;
+}
+
+text {
+    font-size: 4em;
+    font-family: 'Poppins';
+    font-weight: bold;
+    fill: rgb(138, 175, 255)
+}
+
+button {
+    background: rgb(255, 241, 159);
+    border: none;
+    outline: none;
+    padding: 2em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    letter-spacing: .3em;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

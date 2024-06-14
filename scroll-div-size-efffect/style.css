@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.page1{
+    position: relative;
+    width: 100%;
+    height: 110Vh;
+    background-color: #000;
+    overflow: hidden;
+}
+.nav{
+    width: 100%;
+    /* background-color: palevioletred; */
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: .5vw 1vw;
+    color: rgb(255, 255, 255);
+}
+.nav h1{
+    font-size: 2vw;
+    font-weight: 700;
+}
+.nav h4{
+    font-size: .9vw;
+    font-weight: 200;
+}
+.page2{
+    position: relative;
+    width: 100%;
+    height: 100Vh;
+    background-color: rgb(255, 255, 255);
+}
+.rounded-div-wrapper{
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    margin-top: -10vh;
+    background: #000;
+    z-index: 99;
+}
+.rounded-div{
+    width: 150%;
+    height: 750%;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+.part-4{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #7d5f5f;
+}
+
+.lft-part-4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3vw;
+    width: 50%;
+    height: 100%;
+}
+
+.lft-part-4 h1{
+    font-size: 8vw;
+}
+
+.cir-part-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7vw;
+    height: 7vw;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+}
+
+.rght-part-4{
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+    width: 50%;
+    height: 200%;
+    margin-top: 25%;
+    padding-left: 8vw;
+}
+
+.content-rght-part-4{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    opacity: 0;
+}
+
+.content-rght-part-4 h1{
+    font-size: 2.5vw;
+}
+
+.content-rght-part-4 p{
+    font-size: 1.5vw;
+    width: 75%;
+}

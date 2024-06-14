@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    margin: 20em 0;
+}
+.menu-item{
+    width: 100%;
+    padding: 0 2em;
+    display: flex;
+    cursor: pointer;
+}
+p{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    transition: color 0.5s;
+}
+.info, .name, .tag{
+    position: relative;
+    overflow: hidden;
+}
+.info, 
+.tag{
+    flex:1;
+    height: 14px;
+    font-size: 14px;
+}
+.tag{
+    text-align: right;
+}
+.name{
+    flex: 4;
+    height: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+.info p:nth-child(2),
+.name p:nth-child(2),
+.tag p:nth-child(2){
+    top: 100%;
+    color: #000;
+}
+.menu:hover .info P:nth-child(1),
+.menu:hover .tag P:nth-child(1),
+.menu:hover .name P:nth-child(1){
+    color: rgb(165, 165, 165);
+}
+.preview{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 220px;
+    height: 260px;
+    z-index: 2;
+    pointer-events: none;
+}
+.preview-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.preview-img-2{
+    top: 20px;
+    left: 20px;
+}
+.preview-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: red; */
+}
+
+
+@media screen and (max-width:600px) {
+    .name{
+        flex: 4;
+        height: 60px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .info, 
+    .tag{
+    flex:1;
+    height: 14px;
+    font-size: 9px;
+    }
+    .preview{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 220px;
+        height: 260px;
+        z-index: 2;
+        pointer-events: none;
+    }
+}
+@media screen and (max-width:400px) {
+    .name{
+        flex: 4;
+        height: 50px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .info, 
+    .tag{
+    flex:1;
+    height: 17px;
+    font-size: 6px;
+    }
+    .preview{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 80px;
+        height: 120px;
+        z-index: 2;
+        pointer-events: none;
+    }
+}

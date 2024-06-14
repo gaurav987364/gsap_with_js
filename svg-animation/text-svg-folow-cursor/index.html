@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button>View the Experience</button>
+
+    <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500">
+        <title>Circular Text Path</title>
+
+        <defs>
+            <path id="textcircle"
+                d="M250,400
+                    a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"
+                transform="rotate(12,250,250)"/>
+        </defs>
+        <rect width="100%" height="100%" fill="none" />
+        <text>
+            <textPath xlink:href="#textcircle"
+                    aria-label="All for One &amp; One for All"
+                    textLength="942">VIEW THE EXPERIENCE. </textPath>
+        </text>
+
+    </svg>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        
+        const circleSvg = document.querySelector('svg')
+        const btn = document.querySelector('button')
+
+        let mouseX = 0
+        let mouseY = 0
+        //let intv = 0
+
+        window.addEventListener('mousemove', (event) => {
+            // circleSvg.style.top = event.clientY - 45;
+            // circleSvg.style.left = event.clientX - 45;
+
+            mouseY = (event.clientY / 16) - (45 / 16) + 'rem'
+            mouseX = (event.clientX / 16) - (45 / 16) + 'rem'
+        })
+
+        const mouseMove = () => {
+            //intv += 1
+            
+            circleSvg.style.top = mouseY
+            circleSvg.style.left = mouseX
+
+            //circleSvg.style.opacity = 1 + Math.sin(intv * .04)
+            //console.log(Math.sin(intv * .04))
+
+            window.requestAnimationFrame(mouseMove)
+        }
+
+        mouseMove()
+
+        var tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
+
+        tl.to(circleSvg, {width: 0, opacity: 0})
+        tl.to('body, button', {background: 'white'})
+        tl.pause()
+
+        btn.addEventListener('click', () => {
+            tl.play()
+        })
+    </script>
+</body>
+</html>
