@@ -12,7 +12,11 @@ section {
     height: 100vh;
     position: relative;
 }
-
+#p1{
+    width: 100vh;
+    height: 100vh;
+    background-color: aquamarine;
+}
 
 svg {
     width: 100%;

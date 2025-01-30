@@ -49,4 +49,4 @@ document.addEventListener('DOMContentLoaded',function(){
             document.querySelector('#prev-2').classList.add('active')
         })
      })
-})
+});
